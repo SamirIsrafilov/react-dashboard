@@ -1,0 +1,25 @@
+@import 'sidebar';
+@import 'dashboard';
+@import 'catalog';
+@import 'pages';
+@import 'sign';
+@import 'edituser';
+
+
+
+
+
+
+body{
+   
+    background-color: #2b2b31;
+    margin-left:280px !important;
+ 
+}
+@media screen and (max-width:1024px) {
+    body{
+        margin: 0 !important;
+    }
+}
+
+

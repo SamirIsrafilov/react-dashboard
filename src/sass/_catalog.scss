@@ -1,0 +1,227 @@
+.catalog {
+    .catalog_header {
+        border-bottom: 1px solid #424241;
+
+        h2 {
+            font-size: 30px;
+
+            span {
+                font-size: 14px;
+                color: #ffffffbf;
+                margin-left: 15px;
+            }
+        }
+
+        .catalog_form {
+            h6 {
+                font-size: 12px;
+                color: #ffffff80;
+                font-weight: lighter;
+            }
+
+            .catalog_filter {
+                button {
+                    background-color: transparent;
+                    border: 0;
+                    color: #fff;
+                }
+
+                ul {
+                    background-color: #2b2b31;
+                    border: 0;
+                    padding: 15px 20px;
+                    border-top: 3px solid red;
+                    box-shadow: 0px 0px 50px -3px #000;
+
+                    li {
+                        a {
+                            color: #ffffffbf !important;
+                            background-color: transparent;
+                            padding: 8px 20px;
+
+                            &:hover {
+                                color: red !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .catalog_search {
+                width: 240px;
+                height: 40px;
+                transition: 1s;
+                background-color: #28282d;
+
+                &:hover {
+                    border: 1px solid red;
+
+                }
+
+                input {
+                    border: 0;
+                    border-radius: 0;
+                    background-color: transparent;
+                    color: #fff;
+                }
+
+                button {
+                    #search_icon {
+                        color: #ffffff80 !important;
+                        font-size: 18px;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+
+    .catalog_table {
+        overflow: auto !important;
+        overflow: visible;
+
+        table {
+            thead {
+                tr {
+
+                    th {
+                        color: #ffffff80;
+                        font-weight: lighter;
+                        font-size: 12px;
+                        border: 0;
+                        padding:20px;
+
+                    }
+                }
+            }
+
+            tbody {
+        
+
+                tr {
+                
+                    td {
+                        border: 0;
+                        color: #fff;
+                        padding: 15px !important;
+                        background-color: #212529;
+                        font-size: 14px;
+                        border-bottom:15px solid #2b2b31;
+                    
+                      
+                       
+                       
+
+                        ul {
+                            li {
+                             
+                                #lock_btn {
+                                    width: 30px;
+                                    height: 30px;
+                                    display: flex;
+                                    justify-items: center;
+                                    background-color: #5bceae14;
+                                    color: #5bceae;
+                                }
+
+                                #modal_lock{
+                                    box-shadow: 0px -3px 50px 0px #000;
+                                    // width:300px;
+                                    border-radius:5px;
+                                    // margin: 0 auto;
+                                    padding:20px;
+                                    border-top:3px solid #ff0000;
+                                    background-color: #28282d;
+                                    h1{
+                                        font-size:30px !important;
+                                        color: #fff;
+                                        font-weight: lighter;
+                                    }
+                                    p{
+                                       
+                                        font-size: 14px;
+                                        color: #ffffffb3;
+                                    }
+                                    #apply_btn{
+                                        color:#fff;
+                                        font-size:14px;
+                                        font-weight: 500;  
+                                        width:165px;
+                                        height:40px;
+                                        border: 0;
+                                        border-radius:5px;
+                                        background-color: #ff0000;
+                                        box-shadow: 0px -3px 50px 0px red;
+                                    }
+                                    #dismiss_btn{
+                                        color:#fff;
+                                        font-size:14px;
+                                        font-weight: 500;
+                                        width:165px;
+                                        height:40px;
+                                        border: 0;
+                                        background-color: #ffffff0d;
+                                        box-shadow: 0px -3px 50px 0px #282821;
+                                    }
+                                }
+                            }
+
+                            #eye_btn{
+                                button{
+                                    width: 30px;
+                                    height: 30px;
+                                    display: flex;
+                                    justify-items: center;
+                                    background-color: #ff55a514;
+                                    color: #ff55a5cc;
+                                }
+                            }
+
+                            #pen_btn{
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                justify-items: center;
+                                background-color: #3796f614;
+                                color: #3796f6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .catalog_footer{
+        #next_btns{
+           background-color: #28282d;
+           button{
+            width:40px;
+            height:40px;
+            color:#ffffff80;
+            font-weight:500;
+           }
+           button:nth-child(3){
+            background-color: #ff0000;
+            color: #fff;
+            box-shadow: 0px -3px 50px 0px #ff0000;
+           }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+   #modal_lock{
+    #apply_btn{
+        width:100px !important;
+    }
+    #dismiss_btn{      
+        width:100px !important;       
+    }
+   }
+}

@@ -1,0 +1,122 @@
+.dashboard {
+    .dashboard_header {
+        border-bottom: 1px solid #424141;
+
+        #add_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff !important;
+            background-color: red;
+            width: 130px;
+            height: 40px;
+            border: 0;
+            font-weight: bold;
+            box-shadow: 0px 0px 50px -3px red;
+        }
+    }
+
+    .statistics {
+        .stats {
+            background-color: #28282d;
+            border-top: 3px solid red;
+
+            p {
+                color: #ffffffb3;
+                font-size: 14px;
+                margin-bottom: 10px !important;
+            }
+
+            span {
+                color: #fff;
+                font-size: 36px;
+            }
+
+            .stats_icon {
+                color: red;
+                font-size: 36px;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+
+    .dashboard_box {
+        background-color: #28282d;
+
+        .dashboard_box_title {
+            border-bottom: 1px solid #424141;
+            padding:20px 10px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff !important;
+
+                span {
+                    font-size: 20px !important;
+                    color: red !important;
+                }
+            }
+
+            .refresh_btn {
+                color: #ffffffb3;
+                font-size: 18px;
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+
+            .view_btn {
+                font-size: 12px;
+                color: #ffffffb3;
+                background-color: #ffffff0d;
+                border-radius: 3px;
+                border:0;
+                width: 60px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+        .dashboard_table{
+            padding:20px !important;
+            overflow: auto !important;
+            overflow: visible;
+          
+            table{
+                thead{
+                    tr{
+                        border-bottom:1px solid #424141;
+
+                       th{
+                        color:#ffffff80;
+                        font-size:12px;
+                        font-weight:lighter !important;
+                       }
+                        
+                    }
+                }
+                tbody{
+                    tr{
+                        border:0;
+                        color:#fff;
+                        font-size:14px;
+                        th{
+                            border:0; 
+                        }
+                        td{
+                            border:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
